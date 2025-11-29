@@ -1,6 +1,6 @@
 import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 
-const apiKey = process.env.API_KEY || '';
+const apiKey = process.env.API_KEY || 'AIzaSyCZp8XCUFklSgMLeXrarh_LZTvas4uYTgQ';
 
 // Initialize the client
 const ai = new GoogleGenAI({ apiKey });
