@@ -3,7 +3,7 @@ import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 const apiKey = process.env.API_KEY || 'AIzaSyCZp8XCUFklSgMLeXrarh_LZTvas4uYTgQ';
 
 // Initialize the client
-const ai = new GoogleGenAI({ apiKey });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 // System instruction to guide the persona
 const SYSTEM_INSTRUCTION = `
